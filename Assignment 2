@@ -1,0 +1,7 @@
+def function8(list2: list):
+    return max(set(list2), key=list2.count)
+print(function8([1, 2, 3, 1])) # 1 (because 1 appears most frequently)
+print(function8([1, 2, 3, 3, 2, 2])) # 2 (because 2 appears most frequently)
+print(function8([9])) # 9 (because 9 appears most frequently)
+print(function8([-1, 1, -1])) # -1 (because -1 appears most frequently)
+print(function8([0, 0, 1, 1, 0, 0])) # 0 (because 0 appears most frequently)
